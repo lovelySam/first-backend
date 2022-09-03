@@ -4,7 +4,7 @@ const connectionString = "";
 
 
 const connect = (url) => {
-   return mongoose.connect(connectionString);
+   return mongoose.connect(url);
 }
 
 

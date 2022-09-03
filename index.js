@@ -25,7 +25,7 @@ app.use(errorHandler);
 
 const start = async () => {
     try {
-        await connect("ss");
+        await connect("mongodb://localhost/task-manager");
         console.log("Connected to DB");
         app.listen(3000, () => console.log("Listening on 300"));
     } catch (error) {
